@@ -80,6 +80,7 @@ puts "#{sayhello}"
 #functions with arguments
 
 #get input from the user
+puts "enter your name"
 name = gets.chomp
 
 def printurname(name)
@@ -97,4 +98,33 @@ hash = {
 #lets loop through the hash
 
 hash.each {|key,value| puts "key is #{key} and value is #{value}"}
+
+## array operations
+
+new_array  = [1,2,3,4,5]
+
+puts "value of first element of the array is #{new_array[0]}"
+
+#push
+
+new_array.push(96)
+
+puts "value of new_array after push , #{new_array}"
+
+
+#append generally to append one array to another array
+
+another_array = [10,12,24,56,68]
+new_array.append(another_array)
+
+
+puts "value of new_array after append , #{new_array}"
+
+#pop
+new_array.push(-1)
+
+puts "before pop operation  the values from the array #{new_array}"
+new_array.pop()
+puts "remove the values from the array #{new_array}"
+
 
