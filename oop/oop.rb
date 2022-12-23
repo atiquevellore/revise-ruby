@@ -13,8 +13,16 @@ class Bike
     end
 end
 
+#module
+module Bluetooth
+    def connect
+        puts "connecting to Bluetooth .............."
+    end
+end
+
 #inheritance
 class ElectricBike < Bike
+    include Bluetooth
     def initialize 
         @feature = "built in Google Maps"
     end
@@ -28,3 +36,4 @@ end
 ather  = ElectricBike.new
 
 puts ather.bike_info
+puts ather.connect
